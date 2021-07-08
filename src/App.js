@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Layout from './Layout';
+import Journeys from './pages/Journeys';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { QueryClientProvider, QueryClient } from 'react-query';
+import { Provider as ReduxProvider } from 'react-redux';
+import theme from './theme';
+import { store } from '@/redux/store';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnMount: false,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReduxProvider store={store}>
+      <ThemeProvider theme={theme}>
+        <QueryClientProvider client={queryClient}>
+          <Layout>
+            <Journeys />
+          </Layout>
+        </QueryClientProvider>
+      </ThemeProvider>
+    </ReduxProvider>
   );
 }
 
