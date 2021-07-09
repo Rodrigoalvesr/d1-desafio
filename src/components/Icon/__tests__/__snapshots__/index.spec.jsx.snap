@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Renders correctly 1`] = `
+<svg
+  className="makeStyles-root-1 makeStyles-root-2"
+>
+  chart-pie.svg
+</svg>
+`;

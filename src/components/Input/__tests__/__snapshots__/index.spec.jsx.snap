@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="MuiInputBase-root makeStyles-input-3 MuiInputBase-fullWidth"
+    onClick={[Function]}
+  >
+    <input
+      className="MuiInputBase-input"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Renders correctly with icon 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="makeStyles-icon-2"
+  >
+    <div />
+  </div>
+  <div
+    className="MuiInputBase-root makeStyles-input-3 MuiInputBase-fullWidth"
+    onClick={[Function]}
+  >
+    <input
+      className="MuiInputBase-input"
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;

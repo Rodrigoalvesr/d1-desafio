@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <svg
+    className="makeStyles-root-4 makeStyles-root-5 makeStyles-icon-2"
+  >
+    table.svg
+  </svg>
+  <p
+    className="MuiTypography-root makeStyles-name-3 MuiTypography-body1"
+  >
+    Todos
+  </p>
+</div>
+`;

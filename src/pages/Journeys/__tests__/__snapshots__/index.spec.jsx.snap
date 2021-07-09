@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Journey Renders correctly 1`] = `
+<div>
+  <header
+    className="makeStyles-root-2"
+  >
+    <div
+      className="makeStyles-root-3"
+    >
+      <div
+        className="makeStyles-avatarContent-5"
+      >
+        <div
+          aria-describedby={null}
+          className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-4 MuiAvatar-colorDefault"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Antônio da Silva"
+        >
+          A
+        </div>
+      </div>
+      <div
+        className="makeStyles-companyContent-6"
+      >
+        <img
+          alt="acme"
+          height={26}
+          src="acme-logo.png"
+        />
+      </div>
+    </div>
+    <div
+      className="makeStyles-root-11"
+    >
+      <div
+        className="makeStyles-root-13"
+      >
+        <div
+          className="makeStyles-icon-14"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+        </div>
+        <div
+          className="MuiInputBase-root makeStyles-input-15 makeStyles-input-12 MuiInputBase-fullWidth"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Buscar"
+            type="text"
+          />
+        </div>
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+            </svg>
+          </span>
+          Nova Jornada
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </header>
+  <div
+    className="makeStyles-container-1"
+  >
+    <div
+      className="makeStyles-root-17"
+    >
+      <p
+        className="MuiTypography-root makeStyles-title-18 MuiTypography-body1"
+      >
+        Jornadas
+      </p>
+    </div>
+    <div
+      className="makeStyles-root-19"
+    >
+      <div
+        className="MuiTableContainer-root"
+      >
+        <table
+          className="MuiTable-root makeStyles-table-20"
+          role={null}
+        >
+          <thead
+            className="MuiTableHead-root"
+            role={null}
+          >
+            <tr
+              className="MuiTableRow-root MuiTableRow-head"
+              role={null}
+            >
+              <th
+                aria-sort={null}
+                className="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Nome
+              </th>
+              <th
+                aria-sort={null}
+                className="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Destinatário
+              </th>
+              <th
+                aria-sort={null}
+                className="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Sucesso
+              </th>
+              <th
+                aria-sort={null}
+                className="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            className="MuiTableBody-root"
+            role={null}
+          />
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;

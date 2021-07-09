@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <a
+    href="https://www.d1.cx/"
+  >
+    <img
+      alt="D1"
+      height={22}
+      src="logotipo.png"
+    />
+  </a>
+</div>
+`;

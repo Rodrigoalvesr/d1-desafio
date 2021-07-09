@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <p
+    className="MuiTypography-root makeStyles-title-2 MuiTypography-body1"
+  >
+    Jornadas
+  </p>
+  <div
+    className="makeStyles-root-3"
+  >
+    <svg
+      className="makeStyles-root-8 makeStyles-root-9 makeStyles-icon-5"
+    >
+      table.svg
+    </svg>
+    <div
+      className="makeStyles-content-4"
+      onClick={[MockFunction]}
+    >
+      <p
+        className="MuiTypography-root makeStyles-name-7 selected MuiTypography-body1"
+      >
+        Todos
+      </p>
+      <div
+        className="makeStyles-root-10 makeStyles-badge-6 selected"
+      >
+        <p
+          className="MuiTypography-root makeStyles-text-11 selected MuiTypography-body1"
+        >
+          8
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="makeStyles-root-3"
+  >
+    <svg
+      className="makeStyles-root-8 makeStyles-root-12 makeStyles-icon-5"
+    >
+      paper-plane.svg
+    </svg>
+    <div
+      className="makeStyles-content-4"
+      onClick={[MockFunction]}
+    >
+      <p
+        className="MuiTypography-root makeStyles-name-7 MuiTypography-body1"
+      >
+        Em execução
+      </p>
+      <div
+        className="makeStyles-root-10 makeStyles-badge-6"
+      >
+        <p
+          className="MuiTypography-root makeStyles-text-11 MuiTypography-body1"
+        >
+          2
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

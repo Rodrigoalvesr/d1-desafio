@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Company Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="makeStyles-avatarContent-3"
+  >
+    <div
+      aria-describedby={null}
+      className="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-2 MuiAvatar-colorDefault"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      title="Antônio da Silva"
+    >
+      A
+    </div>
+  </div>
+  <div
+    className="makeStyles-companyContent-4"
+  >
+    <img
+      alt="acme"
+      height={26}
+      src="acme-logo.png"
+    />
+  </div>
+</div>
+`;

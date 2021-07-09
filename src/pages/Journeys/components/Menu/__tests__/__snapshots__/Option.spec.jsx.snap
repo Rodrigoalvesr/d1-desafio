@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option Renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <svg
+    className="makeStyles-root-6 makeStyles-root-7 makeStyles-icon-3"
+  >
+    paper-plane.svg
+  </svg>
+  <div
+    className="makeStyles-content-2"
+    onClick={[Function]}
+  >
+    <p
+      className="MuiTypography-root makeStyles-name-5 MuiTypography-body1"
+    >
+      Em execução
+    </p>
+    <div
+      className="makeStyles-root-8 makeStyles-badge-4"
+    >
+      <p
+        className="MuiTypography-root makeStyles-text-9 MuiTypography-body1"
+      >
+        2
+      </p>
+    </div>
+  </div>
+</div>
+`;
