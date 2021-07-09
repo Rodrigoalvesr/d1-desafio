@@ -1,9 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import DataTable from './DataTable';
-import { useQuery } from 'react-query';
 import { useSelector } from 'react-redux';
-import api from '@/services/api';
+import useFetchJourney from './useFetchJourney';
 
 const useStyles = makeStyles({
   root: {
@@ -14,10 +13,7 @@ const useStyles = makeStyles({
 function Content() {
   const classes = useStyles();
   const { filter } = useSelector((journey) => journey);
-
-  const { isLoading, data = [] } = useQuery(['journey', filter], () =>
-    api.get(`/journey/${filter || ''}`).then(({ data }) => data)
-  );
+  const { isLoading, data = [] } = useFetchJourney(filter);
 
   return (
     <div className={classes.root}>

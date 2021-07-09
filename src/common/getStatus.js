@@ -1,4 +1,4 @@
-const createStatus = (name, icon, color) => {
+export const createStatus = (name, icon, color) => {
   return { name, icon, color };
 };
 
@@ -11,7 +11,7 @@ const getStatus = (id) => {
     case 2:
       return createStatus('Ativa', 'activated', '#35C667');
     case 3:
-      return createStatus('Configurando', 'configuration', '#35C667');
+      return createStatus('Configurando', 'configuration', '#3FA8F4');
     case 4:
       return createStatus('Ociosa', 'idle', '#EBBD3E');
     case 5:

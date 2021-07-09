@@ -3,7 +3,7 @@ const INITIAL_STATE = {
   modal: false,
 };
 
-function reducer(state = INITIAL_STATE, action = null) {
+function reducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'JOURNEY_RESET_VALUE':
       return { ...state, ...INITIAL_STATE };

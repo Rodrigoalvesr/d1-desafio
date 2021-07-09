@@ -2,9 +2,8 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Option from './Option';
-import { useQuery } from 'react-query';
 import { useSelector, useDispatch } from 'react-redux';
-import api from '@/services/api';
+import useFetchFilter from './useFetchFilter';
 
 const useStyles = makeStyles({
   root: {
@@ -21,14 +20,12 @@ const useStyles = makeStyles({
   },
 });
 
-function Journeys() {
+function Menu() {
   const classes = useStyles();
   const dispatch = useDispatch();
   const { filter } = useSelector((journey) => journey);
 
-  const { data = [] } = useQuery('filter', () =>
-    api.get('/filter').then(({ data }) => data)
-  );
+  const { data = [] } = useFetchFilter();
 
   const handleChangeFilter = React.useCallback(
     (id) => () => {
@@ -57,4 +54,4 @@ function Journeys() {
   );
 }
 
-export default Journeys;
+export default Menu;

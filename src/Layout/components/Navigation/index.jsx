@@ -30,27 +30,27 @@ const useStyles = makeStyles({
   },
 });
 
+export const createNav = (name, icon, selected = false) => {
+  return { name, icon, selected };
+};
+
+const systemNavigation = [
+  createNav('Análises', 'chart'),
+  createNav('Jornadas', 'rocket'),
+  createNav('Clientes', 'users'),
+  createNav('CCM Cloud', 'cloud', true),
+  createNav('Versão 01', 'link'),
+];
+
+const userNavigation = [
+  createNav('Administração', 'gem'),
+  createNav('Help Desk', 'tools'),
+  createNav('Trocar Conta', 'exchange'),
+  createNav('Sair', 'logout'),
+];
+
 function Navigation() {
   const classes = useStyles();
-
-  const createNav = (name, icon, selected = false) => {
-    return { name, icon, selected };
-  };
-
-  const systemNavigation = [
-    createNav('Análises', 'chart'),
-    createNav('Jornadas', 'rocket'),
-    createNav('Clientes', 'users'),
-    createNav('CCM Cloud', 'cloud', true),
-    createNav('Versão 01', 'link'),
-  ];
-
-  const userNavigation = [
-    createNav('Administração', 'gem'),
-    createNav('Help Desk', 'tools'),
-    createNav('Trocar Conta', 'exchange'),
-    createNav('Sair', 'logout'),
-  ];
 
   return (
     <div className={classes.root}>

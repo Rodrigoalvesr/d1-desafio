@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid #CCCFDE',
     padding: 6,
     borderRadius: 5,
+    background: theme.palette.common.white,
   },
   icon: {
     display: 'flex',

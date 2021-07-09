@@ -48,6 +48,7 @@ Badge.defaultProps = {
 Badge.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   selected: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default Badge;

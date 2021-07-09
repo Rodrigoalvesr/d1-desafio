@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -68,5 +69,22 @@ function DataTable({ data, isLoading }) {
     </TableContainer>
   );
 }
+
+DataTable.defaultProps = {
+  isLoading: false,
+};
+
+DataTable.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      recipients: PropTypes.string.isRequired,
+      success: PropTypes.string.isRequired,
+      status: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  isLoading: PropTypes.bool,
+};
 
 export default DataTable;

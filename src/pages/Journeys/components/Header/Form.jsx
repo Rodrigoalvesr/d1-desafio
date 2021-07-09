@@ -1,8 +1,8 @@
 import React from 'react';
-import PropType from 'prop-types';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import SearchIcon from '@material-ui/icons/Search';
+import { useDispatch } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import Input from '@Components/Input';
 
@@ -19,8 +19,13 @@ const useStyles = makeStyles({
   },
 });
 
-function Form({ handleOpenModal }) {
+function Form() {
   const classes = useStyles();
+  const dispatch = useDispatch();
+
+  const handleOpenModal = React.useCallback(() => {
+    dispatch({ type: 'JOURNEY_OPEN_MODAL' });
+  }, [dispatch]);
 
   return (
     <div className={classes.root}>
@@ -41,9 +46,5 @@ function Form({ handleOpenModal }) {
     </div>
   );
 }
-
-Form.propTypes = {
-  handleOpenModal: PropType.func.isRequired,
-};
 
 export default Form;
